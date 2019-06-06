@@ -10,8 +10,8 @@ class MedelTests(TestCase):
         password = 'beanalytic1234'
         """calling the create_user function on the user manager on our user model"""
         user = get_user_model().objects.create_user(
-        email=email,
-        password=password
+            email=email,
+            password=password
         )
 
         self.assertEqual(user.email, email) #checks that the email address is correct with the given email address on top
